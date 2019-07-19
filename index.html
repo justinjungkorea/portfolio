@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="ko" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+
+    <!-- Definition -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=3000, must-revalidate">
+    <!-- Description -->
+    <title>포트폴리오 | 정동욱</title>
+    <meta name="description" content="정동욱's portfolio site.">
+    <meta name="keywords" content="HTML, CSS, Javascript, jQuery">
+    <meta name="author" content="DongWook Jung">
+    <meta name="robots" content="index, follow">
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="포트폴리오 | 정동욱" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://justinjung.github.io/portfolio" />
+    <meta property="fb:admins" content="justin dongwook jung" />
+    <meta property="fb:app_id" content="" />
+    <meta property="og:description" content="정동욱's portfolio site." />
+    <meta property="og:email" content="jungdw0624@gmail.com" />
+    <meta property="og:phone_number" content="+82-10-3561-0863" />
+    <!-- DNS prefetch -->
+    <link rel="dns-prefetch" hrefp="https://fonts.googleapis.com">
+    <!-- Subresource for critical sheets -->
+    <link rel="subresource" href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand:300,400,500" as="style" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Preload animation script if possible, otherwise it will be loaded at the end of the page -->
+    <link rel="preload" href="./js/animation.js" as="script">
+
+</head>
+<body>
+
+    <main role="main" id="page" class="l-page">
+
+        <!-- 메인 화면 -->
+        <section role="banner" id="hero" class="l-section">
+            <div align="middle">
+                <img src="img/profile.jpg" width="25%" height="25%">
+            </div>
+            <div id="copyright">
+                <p data-animation="fade-in" data-animation-delay="2000" data-animation-offset="0">Copyright &copy; DongWook Jung, All rights reserved.</p>
+            </div>
+    
+            <div role="presentation" id="continue">
+                <a role="button" id="continueButton" href="#introduction" data-animation="fade-in" data-animation-duration="500" data-animation-delay="2000" data-animation-offset="0">Continue</a>
+            </div>
+        </section>
+
+        <!-- 자기소개 -->
+        <div id="introduction" class="l-section l-split">
+
+            
+            <!-- 기술 -->
+            <section role="region" id="skills" class="l-section">
+                <div class="l-section-inner" data-animation="zoom-in-left">
+                    <h2 class="section-heading">
+                        <span class="secondary">Skills</span>
+                        <span class="primary">What I can do</span>
+                    </h2>
+
+                    <div class="section-content">
+                        <figure>
+                            <figcaption class="list-caption">Frontend</figcaption>
+                            <ul class="skill-list checked-list">
+                                <li>HTML</li>
+                                <li>Vanilla JavaScript</li>
+                                <li>React js</li>
+                                <li>CSS</li>
+                            </ul>
+                        </figure>
+
+                        <figure>
+                            <figcaption class="list-caption">Language</figcaption>
+                            <ul class="skill-list checked-list">
+                                <li>Java</li>
+                                <li>C++</li>
+                                <li>Swift</li>
+                            </ul>
+                        </figure>
+
+                        <figure>
+                            <figcaption class="list-caption">Moblie</figcaption>
+                            <ul class="skill-list checked-list">
+                                <li>Android - Java</li>
+                                <li>ios - swift</li>
+                            </ul>
+                        </figure>
+
+                        <figure>
+                            <figcaption class="list-caption">Server</figcaption>
+                            <ul class="skill-list checked-list">
+                                <li>node js</li>
+                                <li>web application server - tomcat</li>
+                            </ul>
+                        </figure>
+
+                        <figure>
+                            <figcaption class="list-caption">Database</figcaption>
+                            <ul class="skill-list checked-list">
+                                <li>Oracle</li>
+                                <li>Mysql</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- 작업물 -->
+        <section role="region" id="works" class="l-section">
+            <div class="l-section-holder">
+                <h2 class="section-heading" data-animation="fade-up">
+                    <span class="secondary">Portfolio</span>
+                    <span class="primary">My works</span>
+                </h2>
+                
+                <div id="portfolio" class="section-content gallery alternate">
+
+                    <!-- Spring MVC Project -->
+                    <article role="article" id="work1" class="gallery-item" data-animation="fade-left">
+                        <figure role="group" class="gallery-figure">
+                            <div class="gallery-image">
+                                <img class="gallery-image-thumb" src="./img/ex1.jpeg" alt="spring mvc project" aria-describedby="work1Description">
+                            </div>
+                            <figcaption class="gallery-caption">
+                                <h3 class="gallery-title">Spring Framework 활용 로그인, 게시판 구현</h3>
+                                <div id="work1Description">
+                                    <p><a href="http://58.225.16.216:8080/springBoardProj" target="_blank">Spring MVC Project 페이지 이동</a>  Spring Framework 를 이용하여 MVC pattern 으로 로그인, 게시판을 구현하였습니다.</p>
+                                    <p>Bootstrap 을 이용하여 반응형 웹 디자인을 적용하였습니다.</p>
+                                    <p>Web Application Server 로는 tomcat8을 이용하였으며 Database는 Mysql8을 사용하였고 Mybatis를 이용하여 연동하였습니다.</p>
+                                    <p>Linux PC를 서버로 활용하여 동작하고 있으며 외부 접속 가능하도록 설정하였습니다.</p>
+                                </div>
+                                <div class="ui-group">
+                                    <a role="button" class="ui-button" href="http://58.225.16.216:8080/springBoardProj" target="_blank">Page</a>
+                                    <a role="button" class="ui-button" href="https://github.com/justinjungkorea/spring_mvc_board" target="_blank">Repos</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div id="work1Description">
+                            <p>Class Diagram</p>
+                        </div>
+                        <div class="gallery-image">
+                            
+                        </div>
+                        <div id="work1Description">
+                            <p>E-R Diagram</p>
+                        </div>
+                        <div class="gallery-image">
+                        
+                        </div>
+                    </article>
+
+                    <!-- 회원관리 프로젝트 -->
+                    <article role="article" id="work2" class="gallery-item" data-animation="fade-right">
+                        <figure role="group" class="gallery-figure">
+                            <div class="gallery-image">
+                                <img class="gallery-image-thumb" src="./img/ex2.png" alt="회원관리 페이지" aria-describedby="work2Description">
+                            </div>
+                            <figcaption class="gallery-caption">
+                                <h3 class="gallery-title">회원관리 페이지</h3>
+                                <div id="work2Description">
+                                    <p><a href="https://justinjungkorea.github.io/management_client" target="_blank">회원관리 페이지 이동</a> Frontend 로는 react js 를 사용하고 Backend는 node js를 사용하였습니다.</p>
+                                    <p>git-page를 이용하여 react app을 배포하였으며 material UI 를 이용하여 디자인을 적용하였습니다.</p>
+                                    <p>node js를 이용하여 server를 구축하였으며 AWS(Amazon Web Services) DB server에서 mysql을 이용하여 테이블을 구현하였습니다.</p>
+                                    <p>Linux PC를 서버로 활용하여 node server가 동작하고 있으며 외부 접속 가능하도록 설정하였습니다.</p>
+                                </div>
+                                <div class="ui-group">
+                                    <a role="button" class="ui-button" href="https://justinjungkorea.github.io/management_client" target="_blank">Page</a>
+                                    <a role="button" class="ui-button" href="https://github.com/justinjungkorea/management_client" target="_blank">Repos - client</a>
+                                    <a role="button" class="ui-button" href="https://github.com/justinjungkorea/management_server" target="_blank">Repos - server</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <!-- justin weather app -->
+                    <article role="article" id="work3" class="gallery-item" data-animation="fade-right">
+                        <figure role="group" class="gallery-figure">
+                            <div class="gallery-image">
+                                <img class="gallery-image-thumb" src="./img/ex3.png" alt="회원관리 페이지" aria-describedby="work2Description">
+                            </div>
+                            <figcaption class="gallery-caption">
+                                <h3 class="gallery-title">날씨 앱</h3>
+                                <div id="work2Description">
+                                    <p><a href="https://developers.sktelecom.com/" target="_blank">SK open API</a> 에서 제공하는 날씨 API를 이용하여 ios application 을 구현하였습니다.</p>
+                                    <p>Xcode 에서 swift를 이용하여 구현하였습니다.</p>
+                                </div>
+                                <div class="ui-group">
+                                    <a role="button" class="ui-button" href="#"
+                                        target="_blank">App Store</a>
+                                    <a role="button" class="ui-button" href="https://github.com/justinjungkorea/justin_weather_app"
+                                        target="_blank">Repos</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <!-- justin weather app -->
+                    <article role="article" id="work4" class="gallery-item" data-animation="fade-right">
+                        <figure role="group" class="gallery-figure">
+                            <div class="gallery-image">
+                                <img class="gallery-image-thumb" src="./img/ex4.png" alt="회원관리 페이지" aria-describedby="work2Description">
+                            </div>
+                            <figcaption class="gallery-caption">
+                                <h3 class="gallery-title">날씨 앱</h3>
+                                <div id="work2Description">
+                                    <p><a href="http://openweathermap.org" target="_blank">OpenWeather</a> 에서 제공하는 날씨 API를 가져다가 hybrid application 을 구현하였습니다.</p>
+                                    <p>React Native를 이용하여 구현하였습니다.</p>
+                                </div>
+                                <div class="ui-group">
+                                    <a role="button" class="ui-button" href="#" target="_blank">Store</a>
+                                    <a role="button" class="ui-button" href="https://github.com/justinjungkorea/weatherApp"
+                                        target="_blank">Repos</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 푸터 -->
+    <footer role="contentinfo" id="footer" class="l-footer">
+        <div class="l-section-holder l-footer-holder footer-widget-group">
+            <!-- 연락처 -->
+            <div id="contacts" class="footer-widget">
+                <h2 class="footer-heading">Contacts</h2>
+                <div class="footer-content">
+                    <ul class="unstyled-list">
+                        <li><!--
+                            --><a href="mailto:jungdw0624@gmail.com" title="이메일"><!--
+                                --><i class="fi icon-email"></i><!--
+                                --><span class="iconed-text">jungdw0624@gmail.com</span><!--
+                            --></a><!--
+                        --></li>
+                        <li><!--
+                            --><span title="전화"><!--
+                                --><i class="fi icon-telephone"></i><!--
+                                --><span class="iconed-text">010 3561 0863</span><!--
+                            --></span><!--
+                        --></li>
+                        <li><!--
+                            --><span title="카카오톡"><!--
+                                --><i class="fi icon-speech-bubble-5"></i><!--
+                                --><span class="iconed-text">jdw01035610863@KakaoTalk</span><!--
+                            --></span><!--
+                        --></li>
+                        <li><!--
+                            --><a href="https://github.com/justinjungkorea" target="_blank" title="깃허브"><!--
+                                --><i class="fi icon-light-bulb"></i><!--
+                                --><span class="iconed-text">gitHub account</span><!--
+                            --></a><!--
+                        --></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="footerBase">
+            <div class="l-section-holder l-footer-holder">정동욱</div>
+        </div>
+
+    </footer>
+
+    <aside role="presentation" id="preload" aria-hidden="true">
+        <div class="throbber">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </aside>
+
+    <!-- 맨 위로 버튼 -->
+    <aside id="backToTop">
+        <a role="button" id="backToTopButton" href="#">
+            <i class="icon"></i>
+            <span class="text">page<br><b>top</b></span>
+        </a>
+    </aside>
+
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="./css/noscript.css">
+    </noscript>
+
+    <!-- 스크립트 -->
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/animation.js"></script>
+    
+</body>
+</html>
